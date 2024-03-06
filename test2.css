@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dee5ff;   
+    font-family: "Red Hat Display", sans-serif;
+
+}
+.container{
+    background: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contents{
+    background-color: white;
+    width: 90%;
+    margin: 3rem auto ;
+    border-radius: 20px;
+}
+img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+h1{
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #1a2f5c;
+}
+p{
+    text-align: center;
+    margin: 0 auto;
+    color:#77839c;
+    padding: 0% 5%;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #f8f9fe;
+    border-radius: 20px;
+}
+.details a{
+    color: #3225c1;
+    font-weight: 700;
+}
+.details a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.details img{
+    width: 50px;
+    height: 50px;
+}
+#price{
+    margin-right: 1rem;
+}
+h3{
+    margin: 0;
+    color: #1a2f5c;
+    
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#proceed{
+    padding: 1rem;
+    width: 85%;
+    margin: 0 auto;
+    font-weight: 800;
+}
+#proceed{
+    color: white;
+    background-color: #382ae1;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    outline: 0;
+    line-height: 1.5;
+    border: 0;
+    box-shadow: 0px 20px 16px #e3e0fc;
+}   
+#proceed:hover{
+    cursor: pointer;
+    background-color: rgb(120 109 249);
+}
+#cancel{
+    color:#77839c;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    padding: 0 1rem 1rem;
+}
+h3>a{
+    text-decoration: none;
+    color: #77839c;
+}
+@media only screen and (min-width: 375px){
+    .contents{
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .container{
+       background: none;
+       max-width: 30rem;
+    }
+    body{
+        background: url('./images/pattern-background-desktop.svg');
+        background-color: #e0e8ff;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
